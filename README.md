@@ -6,14 +6,23 @@ Interpretability-as-a-service for HuggingFace transformer models. Upload any mod
 
 ## Screenshots
 
-| | |
-|---|---|
-| ![Home page](screenshots/Home%20page.png) | ![Analysis result](screenshots/analysis_result.png) |
-| **Home page** — enter a model and prompt | **Analysis result** — ranked neurons with explanations |
-| ![Neuron activations](screenshots/Neuron_Activations.png) | ![Attention heads](screenshots/Attention_Heads.png) |
-| **Neuron activations** — per-token activation heatmap, statistics, contexts | **Attention heads** — ranked heads with focus scores and pattern types |
-| ![Attention pattern](screenshots/Attention_Pattern.png) | ![Per-token activation](screenshots/Per-Token_Activation.png) |
-| **Attention pattern** — head-level attention matrix heatmap | **Per-token activation** — activation strength across tokens |
+![Home page](screenshots/Home%20page.png)
+**Home page** — enter a model and prompt
+
+![Analysis result](screenshots/analysis_result.png)
+**Analysis result** — ranked neurons with explanations
+
+![Neuron activations](screenshots/Neuron_Activations.png)
+**Neuron activations** — per-token activation heatmap, statistics, contexts
+
+![Attention heads](screenshots/Attention_Heads.png)
+**Attention heads** — ranked heads with focus scores and pattern types
+
+![Attention pattern](screenshots/Attention_Pattern.png)
+**Attention pattern** — head-level attention matrix heatmap
+
+![Per-token activation](screenshots/Per-Token_Activation.png)
+**Per-token activation** — activation strength across tokens
 
 ---
 
