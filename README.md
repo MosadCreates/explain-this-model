@@ -4,6 +4,19 @@ Interpretability-as-a-service for HuggingFace transformer models. Upload any mod
 
 ---
 
+## Screenshots
+
+| | |
+|---|---|
+| ![Home page](image.png) | ![Analysis results](image%20copy%204.png) |
+| **Home page** — enter a model and prompt | **Results dashboard** — ranked neurons and attention heads with explanations |
+| ![Neuron drilldown](image%20copy%202.png) | ![Attention head drilldown](image%20copy%203.png) |
+| **Neuron detail** — activation contexts, statistics, explanation | **Attention head detail** — attention matrix heatmap, pattern classification |
+| ![Job progress](image%20copy.png) | ![Job progress (alt)](image%20copy%205.png) |
+| **Job progress** — live stage tracking | |
+
+---
+
 ## Quick Start
 
 ```bash
@@ -33,8 +46,8 @@ docker compose up --build
 
 ```
 ┌──────────┐     ┌──────────────────────┐     ┌──────────────────────┐
-│ Frontend │────▶│   FastAPI Backend    │────▶│   Celery Worker      │
-│ Next.js  │◀────│   port 8000          │◀────│   (analysis task)    │
+│ Frontend │────▶│   FastAPI Backend    │────▶│   Celery Worker     │
+│ Next.js  │◀────│   port 8000          │◀────│   (analysis task)   │
 │ port 3000│     │                      │     │                      │
 └──────────┘     │  ┌─────────────────┐ │     └──────┬───────────────┘
                  │  │    Redis        │◀──────────────┘
