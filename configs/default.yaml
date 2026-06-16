@@ -1,0 +1,43 @@
+analysis:
+  top_k_neurons: 20
+  top_k_heads: 10
+  max_prompt_tokens: 512
+  context_window_size: 5
+
+explanation:
+  provider: groq
+  gemini_model: gemini-2.0-flash
+  claude_model: claude-3-haiku-20240307
+  groq_model: llama-3.1-8b-instant
+  max_explanations_per_job: 30
+  batch_size: 5
+
+rate_limiting:
+  max_jobs_per_hour: 10
+  window_seconds: 3600
+
+cache:
+  model_cache_size: 3
+  activation_ttl_seconds: 3600
+  explanation_ttl_seconds: 86400
+
+model:
+  max_size_mb: 1024
+  supported_architectures:
+    - gpt_style
+    - bert_style
+    - encoder_decoder
+  mlp_patterns:
+    - "MLP"
+    - "FFN"
+    - "FeedForward"
+    - "mlp"
+    - "ffn"
+    - "DenseReluDense"
+  attention_patterns:
+    - "Attention"
+    - "MultiHead"
+    - "attention"
+    - "attn"
+    - "SelfAttention"
+    - "AttentionLayer"

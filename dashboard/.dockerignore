@@ -1,0 +1,22 @@
+node_modules/
+.next/
+.cache/
+*.h
+*.o
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore

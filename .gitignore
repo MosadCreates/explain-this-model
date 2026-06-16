@@ -1,0 +1,47 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.coverage
+
+# Node
+node_modules/
+.next/
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Docker
+docker-compose.override.yml
+
+# Secrets / keys
+*.key
+*.pem
+
+# Temp
+tmp/
+temp/
+*.log
