@@ -9,7 +9,7 @@ Interpretability-as-a-service for HuggingFace transformer models. Upload any mod
 ![Home page](screenshots/Home%20page.png)
 **Home page** — enter a model and prompt
 
-![Analysis result](screenshots/analysis_result.png)
+![Analysis result](screenshots/analysis_results.png)
 **Analysis result** — ranked neurons with explanations
 
 ![Neuron activations](screenshots/Neuron_Activations.png)
