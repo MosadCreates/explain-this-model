@@ -8,12 +8,12 @@ Interpretability-as-a-service for HuggingFace transformer models. Upload any mod
 
 | | |
 |---|---|
-| ![Home page](image.png) | ![Analysis results](image%20copy%204.png) |
-| **Home page** — enter a model and prompt | **Results dashboard** — ranked neurons and attention heads with explanations |
-| ![Neuron drilldown](image%20copy%202.png) | ![Attention head drilldown](image%20copy%203.png) |
-| **Neuron detail** — activation contexts, statistics, explanation | **Attention head detail** — attention matrix heatmap, pattern classification |
-| ![Job progress](image%20copy.png) | ![Job progress (alt)](image%20copy%205.png) |
-| **Job progress** — live stage tracking | |
+| ![Home page](screenshots/Home%20page.png) | ![Analysis result](screenshots/analysis_result.png) |
+| **Home page** — enter a model and prompt | **Analysis result** — ranked neurons with explanations |
+| ![Neuron activations](screenshots/Neuron_Activations.png) | ![Attention heads](screenshots/Attention_Heads.png) |
+| **Neuron activations** — per-token activation heatmap, statistics, contexts | **Attention heads** — ranked heads with focus scores and pattern types |
+| ![Attention pattern](screenshots/Attention_Pattern.png) | ![Per-token activation](screenshots/Per-Token_Activation.png) |
+| **Attention pattern** — head-level attention matrix heatmap | **Per-token activation** — activation strength across tokens |
 
 ---
 
@@ -146,6 +146,7 @@ All settings in `configs/default.yaml`:
 │   ├── lib/                # API client, SWR hooks, utilities
 │   └── store/              # Zustand state management
 ├── docker/                 # Dockerfiles (backend, worker, frontend)
+├── screenshots/            # Screenshots for README
 ├── tests/                  # 210+ pytest tests across 14 files
 ├── configs/                # YAML configuration files
 └── docs/                   # Architecture and concepts documentation
